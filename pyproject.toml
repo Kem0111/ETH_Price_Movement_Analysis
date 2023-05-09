@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "eth-price-movement-analysis"
+version = "0.1.0"
+description = ""
+authors = ["kamran <kamran.abulov@gmail.com>"]
+readme = "README.md"
+packages = [{include = "eth_price_movement_analysis"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
