@@ -23,8 +23,8 @@ async def track_independent_eth_price():
     the last 60 minutes.
     """
     price_history: Dict[str, Deque[float]] = {
-        'ETHUSDT': deque(maxlen=100),
-        'BTCUSDT': deque(maxlen=100)
+        'ETHUSDT': deque(maxlen=60),
+        'BTCUSDT': deque(maxlen=60)
     }
     independent_price_history = deque(maxlen=60)
 
