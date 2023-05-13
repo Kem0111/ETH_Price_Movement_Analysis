@@ -16,10 +16,10 @@ async def get_data(url: str) -> Dict:
         return data
     except aiohttp.ClientError as e:
         print(f"An error occurred while fetching data: {str(e)}")
-        return {}
+        await get_data(url)
     except Exception as e:
         print(f"An unexpected error occurred: {str(e)}")
-        return {}
+        await get_data(url)
 
 
 async def get_hist_data(url: str) -> List[float]:

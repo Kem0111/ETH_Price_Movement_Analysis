@@ -17,8 +17,11 @@ Clone the repository to your local machine:
 ```
 git clone https://github.com/Kem0111/ETH_Price_Movement_Analysis.git
 ````
-cd ETH_Price_Movement_Analysis
-
+If you don't have poetry install it
+```
+pip/pip3 install poetry
+```
+Execute this commands:
 ```
 make install
 make start
